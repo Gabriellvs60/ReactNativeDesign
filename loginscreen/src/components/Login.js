@@ -16,7 +16,7 @@ export default class Login extends Component {
                 <View style={styles.logocontainer}>
                     <Image 
                     style={styles.logo}
-                        source={require('./images/falk.png')}
+                        source={require('./images/coff.png')}
                     />
                 </View>
                 <View style={styles.myform}>
@@ -30,7 +30,7 @@ export default class Login extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#282830',
+        backgroundColor: '#F7EAC8',
         width: Dimensions.get('window').width,
     },
     logocontainer:{
@@ -39,8 +39,8 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     logo:{
-        width: 100,
-        height: 100,
+        width: 250,
+        height: 200,
     },
     /*  titlen:{
         color : '#fff',

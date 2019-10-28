@@ -33,13 +33,14 @@ const styles = StyleSheet.create({
         padding: 20,
     },
     input: {
+        color: '#5E412F',
         height: 40,
         backgroundColor: 'rgba(255,255,255,0.8)',
         //paddingLeft: 10,
         marginBottom: 15,
     },
     buttoncontainer: {
-        backgroundColor: '#F38630',
+        backgroundColor: '#5E412F',
         paddingVertical: 15,
     },
     buttontext: {
