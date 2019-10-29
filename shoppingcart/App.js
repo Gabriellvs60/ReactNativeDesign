@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import Header from './app/components/Header';
-
+import HeroImage from './app/components/HeroImage';
 
 export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
         <Header/>
+        <HeroImage/>
       </View>
     )
   }
