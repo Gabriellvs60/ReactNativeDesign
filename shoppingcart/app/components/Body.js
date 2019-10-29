@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import CompoImage from './CompoImage';
-import GeroText from './HeroText';
+
 export default class Body extends Component {
     render() {
         return (
