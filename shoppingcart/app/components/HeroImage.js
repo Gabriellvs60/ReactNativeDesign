@@ -1,13 +1,16 @@
 import React, { Component } from 'react'
-import { StyleSheet, Text, View, Image } from 'react-native'
+import { StyleSheet, Text, View, ImageBackground } from 'react-native'
+import HeroText from './HeroText';
 
 export default class HeroImage extends Component {
   render() {
     return(
-        <Image 
+        <ImageBackground 
             source={require('../images/img2.jpeg')}
             style={styles.hero}
-        />
+        >
+            <HeroText/>
+            </ImageBackground>
     )
   }
 }
