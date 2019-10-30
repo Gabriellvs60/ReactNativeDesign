@@ -31,8 +31,9 @@ export default class Header extends Component {
 
 const styles = StyleSheet.create({
     headerbg:{
-        flex: 1,
+        marginTop: 1,
         width: null,
+        height: 250,
         alignSelf: 'stretch',
     },
     headercontainer:{
@@ -58,7 +59,7 @@ const styles = StyleSheet.create({
         borderColor: '#fff',
     },
     name:{
-        marginTop: 20,
+        marginTop: 8,
         fontSize: 18,
         color: '#fff',
         fontWeight: 'bold',

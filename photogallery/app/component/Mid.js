@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#CF000F',
         borderTopWidth: 8,
         borderTopColor: '#fff',
+        marginBottom: 2,
     },
     outerView:{
         flex: 1,
