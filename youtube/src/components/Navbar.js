@@ -3,9 +3,10 @@ import React, { Component } from 'react';
 import { 
     StyleSheet, 
     Text,
+    TouchableOpacity,
     Image,
     View 
-    } from 'react-native'
+    } from 'react-native';
 
 export default class Navbar extends Component {
   render() {
@@ -16,7 +17,21 @@ export default class Navbar extends Component {
               style={styles.logo}
               source = {require('../assets/youtube-logo.png')}
               />
+          <View style={styles.moveright}>
+           <TouchableOpacity>
+           <Image 
+              style={styles.icons}
+              source = {require('../assets/search.png')}
+              />
+           </TouchableOpacity>
+           <TouchableOpacity>
+           <Image 
+              style={styles.icons}
+              source = {require('../assets/account.png')}
+              />
+            </TouchableOpacity>
           </View>
+        </View>
       </View>
     )
   }
@@ -31,16 +46,22 @@ const styles = StyleSheet.create({
         height: 55,
         backgroundColor: '#fff',
         elevation: 3,
-
         paddingHorizontal: 15,
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
     },
     logo:{
-        width: 120,
-        height: 50,
-    }
+        width: 163,
+        height: 36,
+    },
+    moveright:{
+        flexDirection: 'row',
+    },
+    icons:{
+        padding: 5,
+        marginLeft: 15,
+    },
     
 })
 

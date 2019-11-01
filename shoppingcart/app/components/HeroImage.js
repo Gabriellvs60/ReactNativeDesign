@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { StyleSheet, Text, View, ImageBackground } from 'react-native'
+import { StyleSheet, Text, View, ImageBackground} from 'react-native'
 import HeroText from './HeroText';
 
 export default class HeroImage extends Component {
