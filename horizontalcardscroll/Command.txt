@@ -1,0 +1,7 @@
+UI TOOLKIT
+npm i react-native-elements --save
+
+iCONS
+npm i --save react-native-vector-icons
+#LINK
+react-native link react-native-vector-icons
