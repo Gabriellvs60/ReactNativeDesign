@@ -18,7 +18,7 @@ export default class CardImage extends Component {
               </Left>
             </CardItem>
             <CardItem cardBody>
-              <Image source={require('./profile.jpeg')} style={{height: 200, width: null, flex: 1}}/>
+              <Image source={require('./prof.jpg')} style={{height: 370, width: 150, flex: 1}}/>
             </CardItem>
             <CardItem>
               <Left>
@@ -46,9 +46,4 @@ export default class CardImage extends Component {
   }
 }
 
-const styles = StyleSheet.create({
-    container:{
-        flex: 1,
-    }
-})
 

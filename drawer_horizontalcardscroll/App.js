@@ -1,18 +1,56 @@
 import React, { Component } from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, FlatList } from 'react-native'
+import { Drawer } from 'native-base';
 import CardImage from './components/CardImage';
+import FooterBadge from './components/FooterBadge';
+import Sidebar from './components/Sidebar';
+import { Container, Header, Left, Body, Right, Button, Icon, Title } from 'native-base';
 
 export default class App extends Component {
+  closeDrawer = () => {
+    this.drawer._root.close()
+  };
+  openDrawer = () => {
+    this.drawer._root.open()
+  };
+
   render() {
     return (
-     <CardImage />
+      <Drawer
+        ref={(ref) => { this.drawer = ref; }}
+        content={<Sidebar navigator={this._navigator} />}
+        onClose={() => this.closeDrawer()}>
+        <Container>
+          <Header>
+            <Left>
+              <Button transparent onPress={() => this.openDrawer()}>
+                <Icon name='menu' />
+              </Button>
+            </Left>
+            <Body>
+              <Title>Side bar Drawer</Title>
+            </Body>
+            <Right>
+              <Button transparent>
+                <Icon name='camera' />
+              </Button>
+            </Right>
+          </Header>
+          <FlatList 
+          data={[{key: 'a'},{key: 'b'},{key: 'c'} ]}
+          renderItem={({item}) => <CardImage />}
+          />
+          <FooterBadge/>
+        </Container>
+      </Drawer>
     )
   }
 }
 
 const styles = StyleSheet.create({
-    container:{
-        flex: 1,
-    }
-})
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+  }
+});
 
